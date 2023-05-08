@@ -9,7 +9,8 @@ intents.guilds = True
 intents.reactions = True
 
 bot = commands.Bot(command_prefix='!', intents=intents)
-openai.api_key = 'OPENAI_API_KEY'
+openai.api_key = os.getenv('OPENAI_API_KEY')
+
 
 @bot.event
 async def on_ready():
@@ -18,21 +19,38 @@ async def on_ready():
     # for guild in bot.guilds:
     #     print(f"{guild.name} (id: {guild.id})")
 
+
+#greeting the bot
 @bot.command()
 async def hello(ctx):
-    await ctx.send('Hello!')
+    await ctx.send('Hello!!')
 
-@bot.command()
-async def info(ctx, *, message):
-    response = openai.Completion.create(
-        engine='text-davinci-003',
-        prompt=message,
-        temperature=0.7,
-        max_tokens=50
-    )
-    await ctx.send(response.choices[0].text)
-  
 
+# we can ask the bot for information in this event
+@bot.event
+async def on_message(message):
+    if message.author == bot.user:
+        return
+
+    if message.content.startswith("!info"):
+        content = message.content[len("!info"):].strip()
+
+        # Make a request to the OpenAI API for text summarization
+        response = openai.Completion.create(
+            engine="text-davinci-003",
+            prompt = content,
+            max_tokens=100,
+            temperature=0.2,
+            top_p=1.0,
+            n=1,
+            stop=None,
+        )
+
+        # Extract the summary from the OpenAI API response
+        output = response.choices[0].text.strip()
+
+        # Send the summary as a message in the Discord channel
+        await message.channel.send(output)
 
 
 try:
