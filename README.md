@@ -24,4 +24,7 @@ The bot summarizes text provided for you just type in `!summarize` and type in t
 ```
 !summarize <message_ID>
 ```
+![Screenshot 2023-05-10 161457](https://github.com/puneeth072003/UtopiaDiscordbot/assets/119479391/4c1226c6-9b00-43fe-97fe-9cb499e9aea4)
+
+---
 
