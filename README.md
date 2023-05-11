@@ -48,3 +48,10 @@ The bot summarizes all the messages of the month only when a **administrator** t
 ```
 ![Screenshot 2023-05-11 072230](https://github.com/puneeth072003/UtopiaDiscordbot/assets/119479391/33a513fb-c3a6-4b06-9113-f65cdfd416ab)
 ---
+### Feature 7: Go through all the messages and give answers based on the provided question.
+The bot goes through all the messages in the channel and give answers based on the provided question `!question`. For example
+```
+!question <YOUR_QUESTION>
+```
+![Screenshot 2023-05-11 072230](https://github.com/puneeth072003/UtopiaDiscordbot/assets/119479391/6480d6ca-1bc4-478a-afac-4d7891a4da83)
+---
