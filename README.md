@@ -53,5 +53,6 @@ The bot goes through all the messages in the channel and give answers based on t
 ```
 !question <YOUR_QUESTION>
 ```
-![Screenshot 2023-05-11 074119](https://github.com/puneeth072003/UtopiaDiscordbot/assets/119479391/b7d5481d-3aab-46bc-a454-004218b7c48d)
+![Screenshot 2023-05-11 154927](https://github.com/puneeth072003/UtopiaDiscordbot/assets/119479391/ae8b3d70-1a72-4ac5-9111-621f4f8a043f)
 ---
+
