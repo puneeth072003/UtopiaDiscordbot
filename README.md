@@ -27,4 +27,24 @@ The bot summarizes text provided for you just type in `!summarize` and type in t
 ![Screenshot 2023-05-10 161457](https://github.com/puneeth072003/UtopiaDiscordbot/assets/119479391/4c1226c6-9b00-43fe-97fe-9cb499e9aea4)
 
 ---
-
+### Feature 4: Summarize all messages of the day.
+The bot summarizes all the messages of the day only when a **administrator** type in `!summarize_day`. For example
+```
+!summarize_day
+```
+![Screenshot 2023-05-10 205452](https://github.com/puneeth072003/UtopiaDiscordbot/assets/119479391/617570fc-9fea-4303-b916-c4071d327a4b)
+---
+### Feature 5: Summarize all messages of the week.
+The bot summarizes all the messages of the week only when a **administrator** type in `!summarize_week`. For example
+```
+!summarize_week
+```
+![Screenshot 2023-05-11 071941](https://github.com/puneeth072003/UtopiaDiscordbot/assets/119479391/ef44a593-5306-4531-ada4-bf834394bcd5)
+---
+### Feature 6: Summarize all messages of the month.
+The bot summarizes all the messages of the month only when a **administrator** type in `!summarize_month`. For example
+```
+!summarize_month
+```
+![Screenshot 2023-05-11 072230](https://github.com/puneeth072003/UtopiaDiscordbot/assets/119479391/33a513fb-c3a6-4b06-9113-f65cdfd416ab)
+---
